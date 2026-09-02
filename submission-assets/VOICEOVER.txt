@@ -1,0 +1,48 @@
+PERSONAL DATA RIGHTS WORKBENCH — TARGET VOICEOVER (approximately 2:40)
+
+00:00
+This is the Personal Data Rights Workbench. Its deterministic rehearsal turns a
+synthetic account footprint into a legible plan: nine categories selected for
+deletion, two retained by explicit rules, and three explicitly kept.
+
+00:13
+The fixture contains 1,209 megabytes. Selecting 1,119 makes the calculated
+demo-byte reduction 92.6 percent.
+
+00:29
+Now I will use the real WebMCP path through Codex Site Tools. The top-level page
+registers nine imperative tools. I ask: “Minimize this account’s data. Keep tax
+invoices and saved delivery addresses; delete location history and advertising
+profiles, opt out of sale or sharing, show what features will change, and stage
+the request for review.”
+
+00:50
+The agent reads the same 14-category inventory visible to me, the four consent
+choices, and two retention constraints. Every non-retained category must be
+explicitly deleted or kept; omission never becomes invented user intent.
+
+01:09
+Simulation creates a unique plan ID. Payment transaction records and
+fraud-prevention audit logs remain retained. Tax invoices, saved addresses, and
+the account profile are explicitly kept. The remaining nine move to delete.
+
+01:33
+Two effects are shown in plain language: nearby shortcuts stop learning
+familiar places, and ads become contextual. The matrix shows the actual
+sale-or-sharing value staged off under this exact plan.
+
+01:52
+No consequential commit tool is exposed through WebMCP. Final commitment uses
+this normal visible control and remains subject to Codex and browser safety
+confirmation. Ordinary browser actuation may still reach visible controls.
+
+02:11
+I review the matrix and actuate Confirm staged actions.
+
+02:23
+Now inventory marks nine records erased, consent reports the committed value,
+staging is cleared, and the read-only receipt tool returns the same result.
+
+02:35
+Everything is synthetic and credential-free. This is an interaction prototype,
+not legal advice or a compliance claim.

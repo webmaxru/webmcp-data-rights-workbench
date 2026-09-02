@@ -1,0 +1,49 @@
+1
+00:00:00,000 --> 00:00:13,000
+The Personal Data Rights Workbench turns a synthetic footprint into a plan:
+9 selected for deletion, 2 retained by rule, and 3 explicitly kept.
+
+2
+00:00:13,000 --> 00:00:29,000
+The fixture contains 1,209 MB. Selecting 1,119 MB produces
+a calculated demo-byte reduction of 92.6 percent.
+
+3
+00:00:29,000 --> 00:00:50,000
+Now I use the real WebMCP path through Codex Site Tools.
+The top-level page registers nine imperative tools.
+
+4
+00:00:50,000 --> 00:01:09,000
+The agent reads 14 categories, four consent choices, and two retention rules.
+Every non-retained category must be explicitly deleted or kept.
+
+5
+00:01:09,000 --> 00:01:33,000
+Simulation creates a unique plan ID. Payment and fraud logs stay retained;
+tax invoices, saved addresses, and account profile are explicitly kept.
+
+6
+00:01:33,000 --> 00:01:52,000
+The remaining nine move to delete. Two feature effects appear,
+and the matrix shows sale or sharing staged off under this exact plan.
+
+7
+00:01:52,000 --> 00:02:11,000
+No consequential commit tool is exposed through WebMCP.
+Final commitment uses the normal visible control, subject to safety confirmation.
+
+8
+00:02:11,000 --> 00:02:23,000
+I review the visible matrix and actuate
+Confirm staged actions.
+
+9
+00:02:23,000 --> 00:02:35,000
+Inventory now marks nine records erased, consent is committed,
+staging is cleared, and the read-only receipt matches the page.
+
+10
+00:02:35,000 --> 00:02:42,000
+Everything is synthetic and credential-free:
+an interaction prototype, not a compliance claim.
