@@ -160,10 +160,9 @@ Preview tooling is a test aid, not a runtime dependency.
 
 ## Hosting
 
-- **GitHub Pages:** enable **Settings → Pages → Source: GitHub Actions**. The
-  workflow builds relative Vite asset URLs and deploys `dist` with official
-  Pages actions. GitHub Pages does not provide repository-controlled response
-  headers.
+- **Live demo:** the verified public build is hosted at
+  `https://webmaxru.github.io/webmcp-data-rights-workbench/`. This private
+  source repository runs validation-only GitHub Actions.
 - **Vercel:** `vercel.json` adds origin isolation,
   `Origin-Agent-Cluster: ?1`, and `Permissions-Policy: tools=(self)`.
 - **Netlify:** `netlify.toml` builds `dist` with the same supported headers.
