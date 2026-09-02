@@ -42,6 +42,9 @@ reach it, and Codex/browser safety confirmation remains applicable.
   (currently private; must be public for challenge eligibility).
 - Final public YouTube video: still required.
 
-A fresh native Codex Site Tool run has not yet been captured for this project,
-so the included storyboard is intentionally not presented as evidence of real
-Codex Site Tool calls.
+A fresh GPT-5.6 Sol Codex run completed against the deployed top-level page on
+September 2, 2026. Codex discovered nine Site Tools, staged `plan-001`, and
+reported the exact 9 delete / 2 retained / 3 kept partition, 1,119 of 1,209 MB
+(92.6%), sale or sharing staged off, no durable change, and no receipt. That run
+was not screen-recorded, so the included storyboard remains rehearsal media
+rather than the required public video evidence.
