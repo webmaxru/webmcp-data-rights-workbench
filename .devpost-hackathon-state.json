@@ -1,0 +1,40 @@
+{
+  "plugin": "devpost-hackathon",
+  "version": 2,
+  "hackathon": {
+    "slug": "webmcp",
+    "name": "The WebMCP Challenge",
+    "url": "https://webmcp.devpost.com",
+    "selected": true,
+    "source": "known"
+  },
+  "participant": {
+    "name": "",
+    "display_name": ""
+  },
+  "project": {
+    "name": "Personal Data Rights Workbench — Delete What You Can, Explain What You Must Keep",
+    "summary": "A synthetic data-rights workflow for inspecting inventory, simulating outcomes, and reviewing plan-bound consent and erasure actions before visible confirmation.",
+    "ai_usage": "Browser-agent coordination through nine WebMCP tools; deterministic client-side domain state. Full development-tool list pending author confirmation.",
+    "codex_usage": "Recorded Codex Site Tools walkthrough documented in the project. Original build-process details pending author confirmation."
+  },
+  "current_stage": "prepare-submission",
+  "completed_stages": [
+    "start-hackathon",
+    "review",
+    "resources"
+  ],
+  "rules_acknowledged": true,
+  "learning": {
+    "status": "not-started",
+    "current_step": "",
+    "completed_steps": [],
+    "plan_file": "",
+    "checklist_file": ""
+  },
+  "submission": {
+    "draft_file": "devpost-submission.md",
+    "status": "drafting"
+  },
+  "next_command": "prepare-submission"
+}
