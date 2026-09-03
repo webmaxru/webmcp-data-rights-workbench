@@ -17,11 +17,9 @@ honest **92.6% demo-byte reduction**.
 ## Live demo and source
 
 - **Live HTTPS demo:** https://webmaxru.github.io/webmcp-data-rights-workbench/
-  (the deployment source is a directory in the central
-  `webmaxru/webmaxru.github.io` repository, but an anonymous request still
-  returned HTTP 404 on 2026-09-03; this source repository now also contains a
-  standard Pages workflow for independent publication). Once restored, it must
-  remain free and unrestricted through **September 21, 2026 at 5:00 p.m. PT**.
+  (deployed from this repository through GitHub Pages Actions and anonymously
+  smoke-tested with HTTP 200 on 2026-09-03). It must remain free and
+  unrestricted through **September 21, 2026 at 5:00 p.m. PT**.
 - **Challenge gallery:** https://webmaxru.github.io/webmcp-challenge/
 - **Source repository:** https://github.com/webmaxru/webmcp-data-rights-workbench
   (public and anonymously readable as of 2026-09-03)
@@ -188,15 +186,10 @@ Preview tooling is a test aid, not a runtime dependency.
 
 ## Hosting
 
-- **GitHub Pages:** the intended URL is
-  `https://webmaxru.github.io/webmcp-data-rights-workbench/`. Its current
-  deployment source is a directory in the central
-  `webmaxru/webmaxru.github.io` repository, although the URL returned HTTP 404
-  in an anonymous check on 2026-09-03.
-  `.github/workflows/deploy-pages.yml` is ready to build and publish this
-  source repository's own `dist` artifact after **Settings → Pages → Source**
-  is set to **GitHub Actions**. The existing validation workflow remains
-  separate and unchanged.
+- **GitHub Pages:** `https://webmaxru.github.io/webmcp-data-rights-workbench/`
+  is deployed from this repository's `dist` artifact by
+  `.github/workflows/deploy-pages.yml`. The Pages workflow and anonymous HTTPS
+  smoke test passed on 2026-09-03; the validation workflow remains separate.
 - **Vercel:** `vercel.json` adds origin isolation,
   `Origin-Agent-Cluster: ?1`, and `Permissions-Policy: tools=(self)`.
 - **Netlify:** `netlify.toml` builds `dist` with the same supported headers.

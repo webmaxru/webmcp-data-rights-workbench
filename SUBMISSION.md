@@ -67,11 +67,9 @@ declarative or iframe-registered tools.
 ## Submission links and publication status
 
 - **Live demo:** https://webmaxru.github.io/webmcp-data-rights-workbench/
-  — its deployment source is the central GitHub Pages repository, but the URL
-  returned HTTP 404 in an anonymous check on 2026-09-03. This source repository
-  now also contains an independent deployment workflow pending Pages
-  UI/API enablement. Once restored, the URL must remain free and unrestricted
-  through September 21, 2026 at 5:00 p.m. PT.
+  — deployed from this public repository through GitHub Pages Actions and
+  anonymously smoke-tested with HTTP 200 on 2026-09-03. It must remain free
+  and unrestricted through September 21, 2026 at 5:00 p.m. PT.
 - **Source:** https://github.com/webmaxru/webmcp-data-rights-workbench
   — public and anonymously readable as of 2026-09-03.
 - **Video:** a public YouTube recording made from `DEMO_SCRIPT.md` is still

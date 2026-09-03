@@ -73,7 +73,8 @@ reach it, and Codex/browser safety confirmation remains applicable.
 ## Publication status
 
 - Live demo: https://webmaxru.github.io/webmcp-data-rights-workbench/
-  (currently returns HTTP 404; restore publication before submission).
+  (GitHub Pages deployment and anonymous HTTP 200 smoke test passed on
+  September 3, 2026).
 - Source: https://github.com/webmaxru/webmcp-data-rights-workbench
   (public and anonymously readable as of September 3, 2026).
 - Final public YouTube video: still required.

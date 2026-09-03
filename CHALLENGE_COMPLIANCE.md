@@ -2,11 +2,10 @@
 
 ## Required links
 
-- [ ] Live HTTPS URL: https://webmaxru.github.io/webmcp-data-rights-workbench/
-  has a deployment directory in the central `webmaxru/webmaxru.github.io`
-  repository but returned HTTP 404 in an anonymous check on 2026-09-03. Once
-  restored, it must remain free and unrestricted through September 21, 2026
-  at 5:00 p.m. PT.
+- [x] Live HTTPS URL: https://webmaxru.github.io/webmcp-data-rights-workbench/
+  deployed successfully through this repository's GitHub Pages workflow and
+  returned HTTP 200 with the expected title on 2026-09-03. It must remain free
+  and unrestricted through September 21, 2026 at 5:00 p.m. PT.
 - [x] Public source repository:
   https://github.com/webmaxru/webmcp-data-rights-workbench is anonymously
   readable as of 2026-09-03.
@@ -41,12 +40,11 @@
 - [x] Clearly labelled deterministic rehearsal
 - [x] Domain and WebMCP registration tests
 - [x] Vercel and Netlify headers/configuration
-- [x] Standard source-repository GitHub Pages deployment workflow; repository
-      Pages source still needs to be set to GitHub Actions in GitHub UI/API
+- [x] Standard source-repository GitHub Pages deployment workflow active
 - [x] MIT license
 - [x] README, submission copy, dialogues, testing guide, and demo script
 - [x] Static social/demo card
-- [ ] Final live deployment currently reachable
+- [x] Final live deployment reachable and anonymously smoke-tested
 - [x] Four clean screenshots, exact captions, and a validated 2:25 local final master
 - [x] Repository visibility changed to public by the owner
 - [ ] Real Codex Site Tool capture uploaded publicly to YouTube
@@ -68,10 +66,7 @@ compliance. It demonstrates a safer interaction pattern.
 
 ## Final publication steps for repository owner
 
-1. In **Settings → Pages**, select **GitHub Actions** as the source, then push
-   or manually dispatch `deploy-pages.yml` and verify its deployed commit.
-2. Confirm GitHub detects the root MIT `LICENSE`.
-3. Add the public YouTube URL to this file and `SUBMISSION.md`.
-4. Run the headline prompt in the supported Site Tools environment.
-5. Upload the validated 2:25 narrated final master from ignored
+1. Upload the validated 2:25 narrated final master from ignored
    `submission-video/` publicly to YouTube.
+2. Add the public YouTube URL to this file and `SUBMISSION.md`.
+3. Complete the entrant-specific Devpost fields and final submission.
