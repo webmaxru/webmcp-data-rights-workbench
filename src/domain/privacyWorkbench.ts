@@ -254,7 +254,7 @@ export class PrivacyWorkbench {
     return structuredClone(exportRequest);
   }
 
-  cancelStagedPlan(planId: string) {
+  cancelStagedPlan(planId: string, reason?: string) {
     if (this.state.receipt) {
       throw new Error("A confirmed receipt cannot be cancelled or removed.");
     }
@@ -266,7 +266,9 @@ export class PrivacyWorkbench {
     this.addTimeline(
       "cancel",
       "Staged plan cancelled",
-      "No account data or consent choice was changed.",
+      reason
+        ? `No account data or consent choice was changed. Note: ${reason}`
+        : "No account data or consent choice was changed.",
       "neutral",
     );
     this.emit();

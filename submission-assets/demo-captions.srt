@@ -1,49 +1,227 @@
 1
-00:00:00,000 --> 00:00:13,000
-The Personal Data Rights Workbench turns a synthetic footprint into a plan:
-9 selected for deletion, 2 retained by rule, and 3 explicitly kept.
+00:00:00,050 --> 00:00:02,199
+You have a legal right to delete your
+data.
 
 2
-00:00:13,000 --> 00:00:29,000
-The fixture contains 1,209 MB. Selecting 1,119 MB produces
-a calculated demo-byte reduction of 92.6 percent.
+00:00:02,199 --> 00:00:03,866
+Almost nobody finishes.
 
 3
-00:00:29,000 --> 00:00:50,000
-Now I use the real WebMCP path through Codex Site Tools.
-The top-level page registers nine imperative tools.
+00:00:03,866 --> 00:00:04,479
+The
 
 4
-00:00:50,000 --> 00:01:09,000
-The agent reads 14 categories, four consent choices, and two retention rules.
-Every non-retained category must be explicitly deleted or kept.
+00:00:04,479 --> 00:00:09,514
+controls are scattered, the retention
+rules are buried, and the last button is
 
 5
-00:01:09,000 --> 00:01:33,000
-Simulation creates a unique plan ID. Payment and fraud logs stay retained;
-tax invoices, saved addresses, and account profile are explicitly kept.
+00:00:09,514 --> 00:00:10,556
+irreversible.
 
 6
-00:01:33,000 --> 00:01:52,000
-The remaining nine move to delete. Two feature effects appear,
-and the matrix shows sale or sharing staged off under this exact plan.
+00:00:10,556 --> 00:00:14,560
+So you either click through a dozen
+screens hoping you understood them, or you
 
 7
-00:01:52,000 --> 00:02:11,000
-No consequential commit tool is exposed through WebMCP.
-Final commitment uses the normal visible control, subject to safety confirmation.
+00:00:14,560 --> 00:00:18,102
+ask a chatbot that can't see your account
+and can only guess.
 
 8
-00:02:11,000 --> 00:02:23,000
-I review the visible matrix and actuate
-Confirm staged actions.
+00:00:18,102 --> 00:00:19,468
+Neither one shows
 
 9
-00:02:23,000 --> 00:02:35,000
-Inventory now marks nine records erased, consent is committed,
-staging is cleared, and the read-only receipt matches the page.
+00:00:19,468 --> 00:00:21,007
+you what you're about to lose.
 
 10
-00:02:35,000 --> 00:02:42,000
-Everything is synthetic and credential-free:
-an interaction prototype, not a compliance claim.
+00:00:21,007 --> 00:00:23,565
+This is the Personal Data Rights
+Workbench.
+
+11
+00:00:23,565 --> 00:00:26,134
+The page itself hands the agent nine
+
+12
+00:00:26,134 --> 00:00:32,338
+WebMCP tools: inventory, consent,
+retention rules, planning, staging,
+
+13
+00:00:32,338 --> 00:00:34,306
+cancellation, and a receipt.
+
+14
+00:00:34,306 --> 00:00:37,697
+The same data I can see — structured so an
+agent
+
+15
+00:00:37,697 --> 00:00:39,201
+can actually reason about it.
+
+16
+00:00:39,201 --> 00:00:41,863
+One sentence, in a fresh Codex session.
+
+17
+00:00:41,863 --> 00:00:44,398
+Keep the tax invoices and the delivery
+
+18
+00:00:44,398 --> 00:00:49,896
+addresses, drop location history and
+advertising profiles, opt out of sale or
+
+19
+00:00:49,896 --> 00:00:52,072
+sharing, and stage it for review.
+
+20
+00:00:52,072 --> 00:00:54,456
+Watch what happens before anything is
+touched.
+
+21
+00:00:54,456 --> 00:00:56,968
+It reads the fourteen categories,
+
+22
+00:00:56,968 --> 00:00:58,947
+the four consent switches, and the
+
+23
+00:00:58,947 --> 00:01:01,609
+retention rules — and it finds two
+categories
+
+24
+00:01:01,609 --> 00:01:05,185
+it isn't allowed to delete yet, so it
+never promises to delete them.
+
+25
+00:01:05,185 --> 00:01:09,144
+Then the plan arrives, and the page
+rearranges itself around it.
+
+26
+00:01:09,144 --> 00:01:10,475
+Nine categories
+
+27
+00:01:10,475 --> 00:01:14,444
+to delete, two held back by rule, three
+kept because I asked.
+
+28
+00:01:14,444 --> 00:01:15,694
+Almost the entire
+
+29
+00:01:15,694 --> 00:01:16,806
+footprint goes.
+
+30
+00:01:16,806 --> 00:01:20,139
+But the part that really matters is the
+trade-off, in plain
+
+31
+00:01:20,139 --> 00:01:25,081
+language: this account stops learning the
+places I go, and my ads become
+
+32
+00:01:25,081 --> 00:01:27,025
+contextual instead of profiled.
+
+33
+00:01:27,025 --> 00:01:32,708
+Every category has to be explicitly
+deleted or kept — silence never becomes
+
+34
+00:01:32,708 --> 00:01:34,132
+consent on my behalf.
+
+35
+00:01:34,132 --> 00:01:37,789
+And each staged action is bound to this
+exact plan
+
+36
+00:01:37,789 --> 00:01:42,176
+version, so a stale or half-remembered
+plan is simply rejected.
+
+37
+00:01:42,176 --> 00:01:44,144
+Now the part I care about most.
+
+38
+00:01:44,144 --> 00:01:45,486
+There is no commit tool.
+
+39
+00:01:45,486 --> 00:01:47,083
+The agent can inspect,
+
+40
+00:01:47,083 --> 00:01:50,544
+plan, explain, and stage — it cannot pull
+the trigger.
+
+41
+00:01:50,544 --> 00:01:51,910
+That step stays with me.
+
+42
+00:01:51,910 --> 00:01:57,616
+And the state really moves: nine records
+erased, sale or sharing off, staging
+
+43
+00:01:57,616 --> 00:01:59,468
+cleared, receipt issued.
+
+44
+00:01:59,468 --> 00:02:02,581
+When the agent reads that receipt back, it
+matches the
+
+45
+00:02:02,581 --> 00:02:03,692
+page exactly.
+
+46
+00:02:03,692 --> 00:02:06,701
+Nothing invented, nothing quietly assumed.
+
+47
+00:02:06,701 --> 00:02:09,838
+Agents shouldn't just click through your
+privacy settings faster.
+
+48
+00:02:09,838 --> 00:02:10,648
+They should
+
+49
+00:02:10,648 --> 00:02:13,414
+make consequences legible before you
+commit.
+
+50
+00:02:13,414 --> 00:02:15,984
+That's what WebMCP makes possible
+
+51
+00:02:15,984 --> 00:02:20,486
+here — on synthetic data, with the final
+say still mine.

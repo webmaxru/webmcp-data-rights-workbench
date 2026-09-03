@@ -1,48 +1,65 @@
-PERSONAL DATA RIGHTS WORKBENCH — TARGET VOICEOVER (approximately 2:40)
+PERSONAL DATA RIGHTS WORKBENCH — VOICEOVER (planned finished runtime 2:37,
+hard ceiling 2:40)
+
+Delivery notes: warm and conversational, not announcer-style. Land the opening
+three sentences slowly, move briskly through the tool calls, then slow down
+again at the confirmation moment. Do not read numbers off the screen.
+
+Stage direction, 00:00–00:26 only (wording below is unchanged): these two
+lines play continuously over the on-camera fresh Codex session open, the
+immediate sidebar collapse, and one continuous top→bottom→hold→top smooth
+scroll of the whole page. Nothing is silent in the opening 10 seconds, and the
+storyboard timing from 00:26 onward is unaffected — see DEMO_SCRIPT.md.
+
 
 00:00
-This is the Personal Data Rights Workbench. Its deterministic rehearsal turns a
-synthetic account footprint into a legible plan: nine categories selected for
-deletion, two retained by explicit rules, and three explicitly kept.
+You have a legal right to delete your data. Almost nobody finishes. The
+controls are scattered, the retention rules are buried, and the last button is
+irreversible.
 
-00:13
-The fixture contains 1,209 megabytes. Selecting 1,119 makes the calculated
-demo-byte reduction 92.6 percent.
+00:12
+So you either click through a dozen screens hoping you understood them, or you
+ask a chatbot that can't see your account and can only guess. Neither one shows
+you what you're about to lose.
 
-00:29
-Now I will use the real WebMCP path through Codex Site Tools. The top-level page
-registers nine imperative tools. I ask: “Minimize this account’s data. Keep tax
-invoices and saved delivery addresses; delete location history and advertising
-profiles, opt out of sale or sharing, show what features will change, and stage
-the request for review.”
+00:26
+This is the Personal Data Rights Workbench. The page itself hands the agent nine
+WebMCP tools: inventory, consent, retention rules, planning, staging,
+cancellation, and a receipt. The same data I can see — structured so an agent
+can actually reason about it.
 
-00:50
-The agent reads the same 14-category inventory visible to me, the four consent
-choices, and two retention constraints. Every non-retained category must be
-explicitly deleted or kept; omission never becomes invented user intent.
+00:43
+One sentence, in a fresh Codex session. Keep the tax invoices and the delivery
+addresses, drop location history and advertising profiles, opt out of sale or
+sharing, and stage it for review.
 
-01:09
-Simulation creates a unique plan ID. Payment transaction records and
-fraud-prevention audit logs remain retained. Tax invoices, saved addresses, and
-the account profile are explicitly kept. The remaining nine move to delete.
+00:57
+Watch what happens before anything is touched. It reads the fourteen categories,
+the four consent switches, and the retention rules — and it finds two categories
+it isn't allowed to delete yet, so it never promises to delete them.
 
-01:33
-Two effects are shown in plain language: nearby shortcuts stop learning
-familiar places, and ads become contextual. The matrix shows the actual
-sale-or-sharing value staged off under this exact plan.
+01:15
+Then the plan arrives, and the page rearranges itself around it. Nine categories
+to delete, two held back by rule, three kept because I asked. Almost the entire
+footprint goes. But the part that really matters is the trade-off, in plain
+language: this account stops learning the places I go, and my ads become
+contextual instead of profiled.
 
-01:52
-No consequential commit tool is exposed through WebMCP. Final commitment uses
-this normal visible control and remains subject to Codex and browser safety
-confirmation. Ordinary browser actuation may still reach visible controls.
+01:39
+Every category has to be explicitly deleted or kept — silence never becomes
+consent on my behalf. And each staged action is bound to this exact plan
+version, so a stale or half-remembered plan is simply rejected.
 
-02:11
-I review the matrix and actuate Confirm staged actions.
+01:56
+Now the part I care about most. There is no commit tool. The agent can inspect,
+plan, explain, and stage — it cannot pull the trigger. That step stays with me.
 
-02:23
-Now inventory marks nine records erased, consent reports the committed value,
-staging is cleared, and the read-only receipt tool returns the same result.
+02:10
+And the state really moves: nine records erased, sale or sharing off, staging
+cleared, receipt issued. When the agent reads that receipt back, it matches the
+page exactly. Nothing invented, nothing quietly assumed.
 
-02:35
-Everything is synthetic and credential-free. This is an interaction prototype,
-not legal advice or a compliance claim.
+02:24
+Agents shouldn't just click through your privacy settings faster. They should
+make consequences legible before you commit. That's what WebMCP makes possible
+here — on synthetic data, with the final say still mine.

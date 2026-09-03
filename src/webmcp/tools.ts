@@ -22,9 +22,33 @@ function ensureObject(input: unknown): Record<string, unknown> {
   return input as Record<string, unknown>;
 }
 
+function toolInput(
+  input: unknown,
+  allowedKeys: readonly string[],
+): Record<string, unknown> {
+  const object = ensureObject(input);
+  const unexpected = Object.keys(object).filter(
+    (key) => !allowedKeys.includes(key),
+  );
+  if (unexpected.length > 0) {
+    throw new Error(`Unexpected tool input fields: ${unexpected.join(", ")}.`);
+  }
+  return object;
+}
+
 function stringArray(value: unknown, name: string): string[] {
-  if (!Array.isArray(value) || value.some((item) => typeof item !== "string")) {
+  if (
+    !Array.isArray(value) ||
+    value.some((item) => typeof item !== "string" || item.length === 0)
+  ) {
     throw new Error(`${name} must be an array of category ID strings.`);
+  }
+  return value;
+}
+
+function planId(value: unknown): string {
+  if (typeof value !== "string" || value.length === 0) {
+    throw new Error("plan_id must be a non-empty string.");
   }
   return value;
 }
@@ -58,7 +82,7 @@ export function createWebMcpTools(
       inputSchema: noInputSchema,
       annotations: readOnly,
       execute: async (input, options) => {
-        ensureObject(input);
+        toolInput(input, []);
         throwIfAborted(options?.signal);
         return { categories: service.getInventory() };
       },
@@ -71,7 +95,7 @@ export function createWebMcpTools(
       inputSchema: noInputSchema,
       annotations: readOnly,
       execute: async (input, options) => {
-        ensureObject(input);
+        toolInput(input, []);
         throwIfAborted(options?.signal);
         return { consents: service.getConsentState() };
       },
@@ -84,7 +108,7 @@ export function createWebMcpTools(
       inputSchema: noInputSchema,
       annotations: readOnly,
       execute: async (input, options) => {
-        ensureObject(input);
+        toolInput(input, []);
         throwIfAborted(options?.signal);
         return { constraints: service.getRetentionConstraints() };
       },
@@ -119,7 +143,11 @@ export function createWebMcpTools(
       },
       annotations: mutating,
       execute: (raw, options) => {
-        const input = ensureObject(raw);
+        const input = toolInput(raw, [
+          "delete_category_ids",
+          "keep_category_ids",
+          "consent_changes",
+        ]);
         throwIfAborted(options?.signal);
         const planInput: SimulationInput = {
           deleteCategoryIds: stringArray(
@@ -174,13 +202,10 @@ export function createWebMcpTools(
       },
       annotations: mutating,
       execute: (raw, options) => {
-        const input = ensureObject(raw);
+        const input = toolInput(raw, ["plan_id", "changes"]);
         throwIfAborted(options?.signal);
-        if (typeof input.plan_id !== "string") {
-          throw new Error("plan_id must be a string.");
-        }
         const staged = service.stageConsentChanges(
-          input.plan_id,
+          planId(input.plan_id),
           input.changes as Partial<Record<ConsentId, boolean>>,
         );
         synchronizeCommittedUi(synchronizeUi);
@@ -203,13 +228,10 @@ export function createWebMcpTools(
       },
       annotations: mutating,
       execute: (raw, options) => {
-        const input = ensureObject(raw);
+        const input = toolInput(raw, ["plan_id", "category_ids"]);
         throwIfAborted(options?.signal);
-        if (typeof input.plan_id !== "string") {
-          throw new Error("plan_id must be a string.");
-        }
         const staged = service.stageErasureRequest(
-          input.plan_id,
+          planId(input.plan_id),
           stringArray(input.category_ids, "category_ids"),
         );
         synchronizeCommittedUi(synchronizeUi);
@@ -236,11 +258,8 @@ export function createWebMcpTools(
       },
       annotations: mutating,
       execute: (raw, options) => {
-        const input = ensureObject(raw);
+        const input = toolInput(raw, ["plan_id", "format", "scope"]);
         throwIfAborted(options?.signal);
-        if (typeof input.plan_id !== "string") {
-          throw new Error("plan_id must be a string.");
-        }
         if (input.format !== "json" && input.format !== "csv") {
           throw new Error("format must be json or csv.");
         }
@@ -248,7 +267,7 @@ export function createWebMcpTools(
           throw new Error("scope must be all_data or current_plan.");
         }
         const staged = service.stagePortabilityExport(
-          input.plan_id,
+          planId(input.plan_id),
           input.format,
           input.scope,
         );
@@ -268,19 +287,29 @@ export function createWebMcpTools(
             type: "string",
             description: "The exact current simulated plan ID.",
           },
-          reason: { type: "string", description: "Optional cancellation note." },
+          reason: {
+            type: "string",
+            maxLength: 200,
+            description: "Optional cancellation note.",
+          },
         },
         required: ["plan_id"],
         additionalProperties: false,
       },
       annotations: mutating,
       execute: (raw, options) => {
-        const input = ensureObject(raw);
+        const input = toolInput(raw, ["plan_id", "reason"]);
         throwIfAborted(options?.signal);
-        if (typeof input.plan_id !== "string") {
-          throw new Error("plan_id must be a string.");
+        if (
+          input.reason !== undefined &&
+          (typeof input.reason !== "string" || input.reason.length > 200)
+        ) {
+          throw new Error("reason must be a string of at most 200 characters.");
         }
-        const result = service.cancelStagedPlan(input.plan_id);
+        const result = service.cancelStagedPlan(
+          planId(input.plan_id),
+          input.reason,
+        );
         synchronizeCommittedUi(synchronizeUi);
         return { ...result, durable_account_change: false };
       },
@@ -293,7 +322,7 @@ export function createWebMcpTools(
       inputSchema: noInputSchema,
       annotations: readOnly,
       execute: async (input, options) => {
-        ensureObject(input);
+        toolInput(input, []);
         throwIfAborted(options?.signal);
         const receipt = service.getReceipt();
         return receipt
@@ -313,10 +342,11 @@ export function registerWebMcpTools(
   onStatus?: (status: WebMcpStatus) => void,
   contextOverride?: WebModelContext,
 ) {
-  const modelContext =
-    contextOverride ??
-    (typeof document !== "undefined" ? document.modelContext : undefined) ??
-    (typeof navigator !== "undefined" ? navigator.modelContext : undefined);
+  const browserContext =
+    (typeof document !== "undefined" && document.modelContext) ||
+    (typeof navigator !== "undefined" && navigator.modelContext) ||
+    undefined;
+  const modelContext = contextOverride || browserContext;
 
   if (!modelContext) {
     onStatus?.({

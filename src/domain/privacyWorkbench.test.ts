@@ -83,6 +83,14 @@ describe("PrivacyWorkbench", () => {
     ).toThrow("does not match the visible plan");
   });
 
+  it("preserves an optional human-readable cancellation note", () => {
+    const plan = service.simulatePlan(headlineInput);
+    service.cancelStagedPlan(plan.id, "Changed my mind");
+    expect(service.getState().timeline.at(-1)?.detail).toContain(
+      "Changed my mind",
+    );
+  });
+
   it("never reuses a plan identity after resetting the synthetic state", () => {
     const first = service.simulatePlan(headlineInput);
     service.reset();

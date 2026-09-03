@@ -29,6 +29,12 @@ describe("WebMCP tools", () => {
       "cancel_staged_privacy_plan",
       "get_privacy_receipt",
     ]);
+    for (const tool of tools) {
+      expect(tool.name).toMatch(/^[A-Za-z0-9_.-]{1,128}$/);
+      expect(tool.description.length).toBeGreaterThan(20);
+      expect(tool.inputSchema).toMatchObject({ type: "object" });
+      expect(typeof tool.execute).toBe("function");
+    }
     expect(
       tools.find((tool) => tool.name === "get_data_inventory")?.annotations
         ?.readOnlyHint,
@@ -85,6 +91,28 @@ describe("WebMCP tools", () => {
     }) as { plan_id: string };
 
     expect(result.plan_id).toBe(service.getState().plan?.id);
+  });
+
+  it("rejects unexpected fields and malformed direct inputs", async () => {
+    const tools = createWebMcpTools(new PrivacyWorkbench());
+    await expect(
+      tools
+        .find((tool) => tool.name === "get_data_inventory")!
+        .execute({ ignored: true }),
+    ).rejects.toThrow("Unexpected tool input fields");
+    expect(() =>
+      tools.find((tool) => tool.name === "simulate_privacy_plan")!.execute({
+        delete_category_ids: headlineInput.deleteCategoryIds,
+        keep_category_ids: headlineInput.keepCategoryIds,
+        consent_changes: headlineInput.consentChanges,
+        extra: "not allowed",
+      }),
+    ).toThrow("Unexpected tool input fields");
+    expect(() =>
+      tools.find((tool) => tool.name === "cancel_staged_privacy_plan")!.execute({
+        plan_id: "",
+      }),
+    ).toThrow("plan_id must be a non-empty string");
   });
 
   it("rejects an already-aborted invocation before mutation", () => {

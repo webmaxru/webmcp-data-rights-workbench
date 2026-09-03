@@ -17,11 +17,38 @@ honest **92.6% demo-byte reduction**.
 ## Live demo and source
 
 - **Live HTTPS demo:** https://webmaxru.github.io/webmcp-data-rights-workbench/
+  (the deployment source is a directory in the central
+  `webmaxru/webmaxru.github.io` repository, but an anonymous request still
+  returned HTTP 404 on 2026-09-03; this source repository now also contains a
+  standard Pages workflow for independent publication). Once restored, it must
+  remain free and unrestricted through **September 21, 2026 at 5:00 p.m. PT**.
 - **Challenge gallery:** https://webmaxru.github.io/webmcp-challenge/
 - **Source repository:** https://github.com/webmaxru/webmcp-data-rights-workbench
-  (private by instruction; it must be made public before Devpost submission)
-- **Narrated rehearsal storyboard:** `submission-assets/demo-draft.mp4`
-  (watermarked draft, not the required real Codex capture)
+  (public and anonymously readable as of 2026-09-03)
+- **Recording instructions:** `DEMO_SCRIPT.md` and `submission-assets/`
+  contain text, screenshots, and the upload-ready caption track at
+  `submission-assets/demo-captions.srt`. A validated 2:25 narrated final master
+  exists exclusively in the ignored `/submission-video/` folder and is not
+  committed.
+
+## Why WebMCP
+
+Privacy controls normally scatter one intention across inventory screens,
+retention explanations, consent toggles, export forms, and destructive
+confirmation dialogs. Coordinate-based browser automation must rediscover that
+meaning from labels and layout on every step. WebMCP lets this page expose the
+actual domain operations—known category IDs, retention constraints, complete
+delete/keep partitions, feature effects, current plan IDs, and staged actions—
+while the human watches the same visible state.
+
+The agent can perform the repetitive cross-screen accounting and reject stale
+or incomplete plans; the human can inspect every consequence, cancel the
+reversible plan, and retain the final consequential decision. Together they can
+turn a broad request such as “minimize my data” into an explicit category-level
+proposal and immutable receipt without silently treating omitted categories as
+consent. That combination of semantic orchestration, shared visible state, and
+a human-held commit boundary is the capability that was difficult to achieve
+reliably before WebMCP.
 
 ## Run locally
 
@@ -147,11 +174,12 @@ registration.
 
 ## Chrome preview fallback testing
 
-1. Use Chrome 149 or a newer WebMCP-enabled preview build over HTTPS or
-   localhost.
-2. Enable `chrome://flags/#enable-webmcp-testing` when required.
-3. Chrome 150+ uses `document.modelContext`; Chrome 149 can use the temporary
-   `navigator.modelContext` fallback.
+1. Use the ChatGPT desktop in-app browser, or Google Chrome 149 or later over
+   HTTPS or localhost.
+2. In Chrome, enable `chrome://flags/#enable-webmcp-testing`.
+3. The app prefers `document.modelContext` and keeps
+   `navigator.modelContext` as a transition fallback. Chrome 151+
+   registration is asynchronous and is awaited by this app.
 4. Inspect and invoke all nine tools using supported preview tooling.
 5. Verify pre-commit cancellation rejects without mutation and late
    post-commit cancellation does not produce a false failure.
@@ -160,9 +188,15 @@ Preview tooling is a test aid, not a runtime dependency.
 
 ## Hosting
 
-- **Live demo:** the verified public build is hosted at
-  `https://webmaxru.github.io/webmcp-data-rights-workbench/`. This private
-  source repository runs validation-only GitHub Actions.
+- **GitHub Pages:** the intended URL is
+  `https://webmaxru.github.io/webmcp-data-rights-workbench/`. Its current
+  deployment source is a directory in the central
+  `webmaxru/webmaxru.github.io` repository, although the URL returned HTTP 404
+  in an anonymous check on 2026-09-03.
+  `.github/workflows/deploy-pages.yml` is ready to build and publish this
+  source repository's own `dist` artifact after **Settings → Pages → Source**
+  is set to **GitHub Actions**. The existing validation workflow remains
+  separate and unchanged.
 - **Vercel:** `vercel.json` adds origin isolation,
   `Origin-Agent-Cluster: ?1`, and `Permissions-Policy: tools=(self)`.
 - **Netlify:** `netlify.toml` builds `dist` with the same supported headers.

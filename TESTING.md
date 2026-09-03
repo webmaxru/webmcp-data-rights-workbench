@@ -228,8 +228,10 @@ and `sale_or_sharing` is unchanged.
 ## Browser/WebMCP checks
 
 - Page is loaded directly over HTTPS or localhost, never in an iframe.
-- `document.modelContext` is preferred; Chrome 149 can use
-  `navigator.modelContext`.
+- Use the ChatGPT desktop in-app browser, or Google Chrome 149 or later with
+  `chrome://flags/#enable-webmcp-testing` enabled.
+- `document.modelContext` is preferred, with the deprecated
+  `navigator.modelContext` retained only as a transition fallback.
 - All nine registrations are atomic and share one lifecycle AbortSignal.
 - Tool execution uses a distinct per-call AbortSignal.
 - The page reports either complete readiness or an error; never partial
