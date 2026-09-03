@@ -76,3 +76,26 @@ declarative or iframe-registered tools.
   required. Upload `submission-assets/demo-captions.srt` as its caption track.
   Local recordings and final masters remain uncommitted in the ignored
   `/submission-video/` folder.
+
+## YouTube title and description
+
+**Title**
+
+`Delete My Data - But Keep What Must Be Retained | WebMCP + Codex`
+
+**Description**
+
+```text
+"Delete my data" sounds like one action. In reality, some data must be retained, some data powers features the person wants, and every consequential change needs a reviewable boundary.
+
+In this 2:25 Codex demo, the Personal Data Rights Workbench exposes nine WebMCP tools over a synthetic 14-category account inventory. Codex reads consent and retention rules, calculates a transparent 9 delete / 2 retain / 3 keep plan, explains the trade-offs, and stages the exact changes. The page, not the agent, owns final commitment through a visible control and produces a receipt only after the reviewed plan commits.
+
+The demo uses deterministic synthetic data. It is not legal advice or a compliance certification.
+
+Try it: https://webmaxru.github.io/webmcp-data-rights-workbench/
+Source: https://github.com/webmaxru/webmcp-data-rights-workbench
+
+Built for the WebMCP Challenge.
+
+#WebMCP #AIAgents #DataRights #Privacy #Codex
+```
