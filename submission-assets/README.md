@@ -1,10 +1,12 @@
 # Submission media assets
 
-This folder contains recording-ready text assets:
+> This project was created using the [WebMCP Agent Skill from the Web AI Agent Skills collection](https://github.com/webmaxru/web-ai-agent-skills).
+
+This folder contains the final submission media support assets:
 
 - `VOICEOVER.txt` — the spoken narration, aligned to the implemented synthetic
   14 / 9 / 2 / 3 fixture, with a planned finished runtime of 2:37.
-- `demo-captions.srt` — upload-ready captions synchronized to the final master.
+- `demo-captions.srt` — captions synchronized to the published final video.
 - `../DEMO_SCRIPT.md` — the authoritative recording plan: operator setup, the
   on-camera fresh-session/sidebar-hide cold open, the full-page scan, timed
   storyboard with per-tool-call scroll/cursor targets, exact Codex prompts,
@@ -77,8 +79,8 @@ reach it, and Codex/browser safety confirmation remains applicable.
   September 3, 2026).
 - Source: https://github.com/webmaxru/webmcp-data-rights-workbench
   (public and anonymously readable as of September 3, 2026).
-- Final public YouTube video: still required.
+- Published 2:25 YouTube video: https://youtu.be/Yt5Ggk0LXLw
 
-A validated 2:25 narrated final master showing real Codex Site Tool discovery
-and calls exists only in ignored `submission-video/`. Upload it publicly to
-YouTube and attach `demo-captions.srt`.
+The published video shows real Codex Site Tool discovery and calls. The local
+master remains only in ignored `submission-video/`; `demo-captions.srt` is kept
+as the final caption source.

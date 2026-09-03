@@ -9,7 +9,7 @@
 - [x] Public source repository:
   https://github.com/webmaxru/webmcp-data-rights-workbench is anonymously
   readable as of 2026-09-03.
-- [ ] Demo video URL: a public YouTube upload is still required.
+- [x] Demo video URL: https://youtu.be/Yt5Ggk0LXLw
 
 ## Submission package
 
@@ -47,7 +47,7 @@
 - [x] Final live deployment reachable and anonymously smoke-tested
 - [x] Four clean screenshots, exact captions, and a validated 2:25 local final master
 - [x] Repository visibility changed to public by the owner
-- [ ] Real Codex Site Tool capture uploaded publicly to YouTube
+- [x] Real Codex Site Tool capture published at https://youtu.be/Yt5Ggk0LXLw
 
 ## OpenAI compatibility statement
 
@@ -64,9 +64,7 @@ receipts are synthetic deterministic fixtures. This workbench is not legal advic
 does not determine eligibility for a legal right, and does not claim regulatory
 compliance. It demonstrates a safer interaction pattern.
 
-## Final publication steps for repository owner
+## Final submission steps for repository owner
 
-1. Upload the validated 2:25 narrated final master from ignored
-   `submission-video/` publicly to YouTube.
-2. Add the public YouTube URL to this file and `SUBMISSION.md`.
-3. Complete the entrant-specific Devpost fields and final submission.
+1. Complete the entrant-specific Devpost fields using the links in this file and `SUBMISSION.md`.
+2. Submit the completed entry before the deadline.

@@ -72,16 +72,13 @@ declarative or iframe-registered tools.
   and unrestricted through September 21, 2026 at 5:00 p.m. PT.
 - **Source:** https://github.com/webmaxru/webmcp-data-rights-workbench
   — public and anonymously readable as of 2026-09-03.
-- **Video:** a public YouTube recording made from `DEMO_SCRIPT.md` is still
-  required. Upload `submission-assets/demo-captions.srt` as its caption track.
-  Local recordings and final masters remain uncommitted in the ignored
-  `/submission-video/` folder.
+- **Video:** https://youtu.be/Yt5Ggk0LXLw
 
 ## YouTube title and description
 
 **Title**
 
-`Delete My Data - But Keep What Must Be Retained | WebMCP + Codex`
+`Delete My Data - But Keep What Must Be Retained | WebMCP`
 
 **Description**
 

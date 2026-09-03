@@ -1,5 +1,7 @@
 # Personal Data Rights Workbench
 
+> This project was created using the [WebMCP Agent Skill from the Web AI Agent Skills collection](https://github.com/webmaxru/web-ai-agent-skills).
+
 A polished, deterministic WebMCP Challenge demo for inspecting a synthetic
 account, understanding retention constraints, simulating a data-minimization
 plan, staging consent, erasure, or portability actions, and committing staged
@@ -23,11 +25,7 @@ honest **92.6% demo-byte reduction**.
 - **Challenge gallery:** https://webmaxru.github.io/webmcp-challenge/
 - **Source repository:** https://github.com/webmaxru/webmcp-data-rights-workbench
   (public and anonymously readable as of 2026-09-03)
-- **Recording instructions:** `DEMO_SCRIPT.md` and `submission-assets/`
-  contain text, screenshots, and the upload-ready caption track at
-  `submission-assets/demo-captions.srt`. A validated 2:25 narrated final master
-  exists exclusively in the ignored `/submission-video/` folder and is not
-  committed.
+- **Demo video:** [Watch the 2:25 narrated Codex/WebMCP walkthrough](https://youtu.be/Yt5Ggk0LXLw)
 
 ## Why WebMCP
 
