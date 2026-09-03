@@ -18,11 +18,10 @@ honest **92.6% demo-byte reduction**.
 
 ## Live demo and source
 
-- **Live HTTPS demo:** https://webmaxru.github.io/webmcp-data-rights-workbench/
-  (deployed from this repository through GitHub Pages Actions and anonymously
+- **Project GitHub Pages site:** https://webmaxru.github.io/webmcp-data-rights-workbench/
+  (deployed from this repository through its GitHub Pages workflow and anonymously
   smoke-tested with HTTP 200 on 2026-09-03). It must remain free and
   unrestricted through **September 21, 2026 at 5:00 p.m. PT**.
-- **Challenge gallery:** https://webmaxru.github.io/webmcp-challenge/
 - **Source repository:** https://github.com/webmaxru/webmcp-data-rights-workbench
   (public and anonymously readable as of 2026-09-03)
 - **Demo video:** [Watch the 2:25 narrated Codex/WebMCP walkthrough](https://youtu.be/Yt5Ggk0LXLw)
