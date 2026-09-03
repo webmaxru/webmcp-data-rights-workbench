@@ -2,6 +2,8 @@
 
 > This project was created using the [WebMCP Agent Skill from the Web AI Agent Skills collection](https://github.com/webmaxru/web-ai-agent-skills).
 
+**Project:** Personal Data Rights Workbench — Delete What You Can, Explain What You Must Keep
+
 This folder contains the final submission media support assets:
 
 - `VOICEOVER.txt` — the spoken narration, aligned to the implemented synthetic

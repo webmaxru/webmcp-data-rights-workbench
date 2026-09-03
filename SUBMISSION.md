@@ -1,4 +1,13 @@
-# Devpost submission copy
+# Submission information
+
+## Project name
+
+**Personal Data Rights Workbench — Delete What You Can, Explain What You Must Keep**
+
+## Tagline
+
+Turn a vague “delete my data” request into a transparent plan that shows what
+can go, what must stay, and why.
 
 ## 1. What we built
 
