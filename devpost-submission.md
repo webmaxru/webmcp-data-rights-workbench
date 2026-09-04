@@ -117,7 +117,7 @@ are internal preparation material, not text to paste into the public write-up.
 
 ## Title
 
-**Proposed Devpost title, pending author confirmation:** Personal Data Rights Workbench
+**Confirmed Devpost title:** Personal Data Rights Workbench
 
 The original full name is 80 characters. Devpost's project title limit is 60;
 the existing short name is 30. Keep the original longer wording as a subtitle
@@ -160,9 +160,9 @@ inventory, consent, retention, planning, staging, and receipt-reading workflow.
 The application itself has no embedded language model or inference backend;
 its domain calculations and synthetic fixture are deterministic.
 
-The repository credits the WebMCP Agent Skill from the Web AI Agent Skills
-collection. **TODO — author:** confirm the complete list of AI development,
-testing, writing, voice, and media tools actually used.
+The author confirmed Codex as the AI tool used for this project. The repository
+also credits the WebMCP Agent Skill from the Web AI Agent Skills collection as
+development guidance. No other AI tool is claimed in the official form answer.
 
 ## How We Used Codex
 
@@ -172,11 +172,10 @@ confirmation. This preparation session used Codex to inspect the existing
 implementation and materials, add judge-facing instructions, and run the
 automated tests and production build.
 
-**TODO — author:** describe how Codex helped during the original build,
-debugging, testing, or iteration, if applicable. The available files do not
-establish the entire development history, so do not claim that Codex wrote
-particular features without confirmation. No guided-build notes directory was
-present.
+The author confirmed Codex use during the project. The recorded Site Tools
+walkthrough and this session's preparation and verification work are concrete
+examples. No finer-grained claim about which original features Codex authored
+is made; no guided-build notes directory was present.
 
 ## Key Features
 
@@ -328,19 +327,24 @@ the final thumbnail choice remains with the author.
 ## Submission Readiness Notes
 
 The product story, source, demo link, testing guide, local video, and four
-screenshots exist. This remains a local draft, not a final-ready entry.
+screenshots exist. The author confirmed the short title, media checks, and
+documented Codex Site Tools testing, then supplied all required personal form
+answers on September 4, 2026.
 
-Resolve before final review:
+Final readiness review: ready, pending explicit permission for the Devpost
+writes. The local security scan found no high-confidence secrets, generic
+credential assignments, or risky credential files. The previous 25-test and
+production-build checks passed; they were not repeated on September 4 because
+this pass changes preparation documents only.
 
-- Confirm a title within Devpost's 60-character limit.
-- Supply the entrant-specific and self-reported answers below.
-- Review and correct the video claims identified above, keeping narration,
-  captions, description, and actual behavior consistent.
-- Verify public YouTube playback with audio and real native WebMCP interaction
-  in a clean supported browser session.
-- Run the full redacted security scan during `$submit-project`.
-- Review the final public copy personally; keep preparation notes and TODOs
-  out of the Devpost description.
+The earlier video/caption review observations above remain as an audit record.
+Media review/correction and public playback are author-confirmed, not newly
+independently replayed by this preparation session. No media was modified or
+uploaded by the assistant.
+
+Use only the clean public description and the exact field values below for
+Devpost. Do not include this preparation supplement or its audit notes in the
+public project description. Nothing has been sent to Devpost for this project.
 
 Deadline snapshot: Devpost's September 3 announcement “Deadline Extension |
 12 more hours” confirms **September 4, 2026 at 1:00 a.m. Pacific Time**
@@ -366,23 +370,21 @@ and prohibit post-deadline alterations to the entry materials.
   control; the visible confirmation button is not an authorization boundary
   that prevents all browser automation.
 
-## TODO Official Form Fields
+## Confirmed Official Form Fields
 
-These labels and IDs were fetched from Devpost for `webmcp` on September 3,
-2026. TODOs are not answers and must not be transmitted as values.
+These labels and IDs were rechecked against live Devpost requirements for
+`webmcp` on September 4, 2026. The author supplied the personal choices below.
 The form does not request a Codex session ID.
 
-- **28249 — Submitter Type (required):** TODO author choice:
-  `Individual`, `Team of Individuals`, or `Organization`.
+- **28249 — Submitter Type (required):** `Individual`.
 - **28250 — Country of residence of yourself and team members if applicable
-  (required; multiple):** TODO author country/countries. Do not infer from
-  timezone, name, account profile, or computer location.
+  (required; multiple):** `["Norway"]`.
 - **28251 — If submitting on behalf of an organization, what is the organization
-  name? (optional):** TODO only if applicable; otherwise omit.
-- **28252 — App Status (required):** TODO author choice: `New` or `Existing`.
+  name? (optional):** Not applicable; omit.
+- **28252 — App Status (required):** `New`.
 - **28253 — If Existing, explain what you updated during the submission period.
   (We recommend explaining this in your text description, too!) (optional,
-  conditional):** TODO if existing; describe and evidence the new WebMCP work.
+  conditional):** Not applicable; omit.
 - **28254 — Live URL that judges can access using ChatGPT’s in-app browser or
   Google Chrome with WebMCP enabled (required):**
   https://webmaxru.github.io/webmcp-data-rights-workbench/
@@ -393,13 +395,10 @@ The form does not request a Codex session ID.
 - **28256 — URL to your PUBLIC Code Repo (on Github, Gitlab, or Bitbucket)
   (required):** https://github.com/webmaxru/webmcp-data-rights-workbench
 - **28257 — Which agent(s) or client(s) did you test your WebMCP tools with?
-  (required):** Documented answer: Codex Site Tools in the recorded walkthrough.
-  TODO author confirmation and any additional clients actually tested.
-  A compatible browser listed in the README is not proof it was tested.
+  (required):** `Codex Site Tools` — recorded walkthrough; author-confirmed.
 - **28258 — Which AI tools have you leveraged while working on this project?
-  (required):** TODO author complete list and uses. Available evidence identifies
-  Codex Site Tools and the WebMCP Agent Skill; do not infer additional tools.
+  (required):** `Codex`.
 - **28259 — Describe the level of learning you/your team derived from the project
-  (required):** TODO author choice: `None`, `Moderate`, or `Significant`.
+  (required):** `Significant`.
 - **28260 — Did you gain AI value that you can use in your career? (required):**
-  TODO author choice: `Yes` or `No`.
+  `Yes`.

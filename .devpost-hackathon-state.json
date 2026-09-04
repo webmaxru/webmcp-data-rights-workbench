@@ -13,16 +13,18 @@
     "display_name": ""
   },
   "project": {
-    "name": "Personal Data Rights Workbench — Delete What You Can, Explain What You Must Keep",
+    "name": "Personal Data Rights Workbench",
     "summary": "A synthetic data-rights workflow for inspecting inventory, simulating outcomes, and reviewing plan-bound consent and erasure actions before visible confirmation.",
-    "ai_usage": "Browser-agent coordination through nine WebMCP tools; deterministic client-side domain state. Full development-tool list pending author confirmation.",
-    "codex_usage": "Recorded Codex Site Tools walkthrough documented in the project. Original build-process details pending author confirmation."
+    "ai_usage": "Browser-agent coordination through nine WebMCP tools; deterministic client-side domain state. Author-confirmed AI tool: Codex.",
+    "codex_usage": "Author-confirmed Codex use; recorded Codex Site Tools walkthrough, submission preparation, and test/build verification."
   },
-  "current_stage": "prepare-submission",
+  "current_stage": "submit-project",
   "completed_stages": [
     "start-hackathon",
     "review",
-    "resources"
+    "resources",
+    "prepare-submission",
+    "submit-project"
   ],
   "rules_acknowledged": true,
   "learning": {
@@ -34,7 +36,14 @@
   },
   "submission": {
     "draft_file": "devpost-submission.md",
-    "status": "drafting"
+    "status": "submitted",
+    "project_id": 1416606,
+    "project_slug": "personal-data-rights-workbench",
+    "project_url": "https://devpost.com/software/personal-data-rights-workbench",
+    "submission_id": 1170341,
+    "submitted_at": "2026-09-04T06:27:56.702Z",
+    "verified_live": true,
+    "thumbnail_url": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/005/258/412/datas/medium.png"
   },
-  "next_command": "prepare-submission"
+  "next_command": "hackathon-map"
 }
